@@ -396,8 +396,12 @@ export class Range extends Component<{
 export class SearchInput extends Component<{
     modifier?: string | undefined,
     disabled?: boolean | undefined,
+    readOnly?: boolen | undefined,
     onChange?(e: Event): void,
+    onInput?(e: Event): void,
     value?: string | undefined,
+    defaultValue?: string | undefined,
+    placeholder?: string | undefined,
     inputId?: string | undefined,
 }, any> {}
 
